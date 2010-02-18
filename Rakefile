@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "super_migration"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Migrate legacy database content into a databse with a new structure.}
+    gem.description = %Q{Migrate legacy database content into a databse with a new structure.}
     gem.email = "prodan.cristian@gmail.com"
     gem.homepage = "http://github.com/christian/super_migration"
     gem.authors = ["Cristian Prodan"]
