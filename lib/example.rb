@@ -20,12 +20,10 @@ SuperMigration.migrate do
   table :from => :books, :to => :livres do
 
     field :from => :author, :to => :autheur
-    field :from => :title,  :to => :titre
     
     # apply a transformation to dob field
-    #field :from => :dob, :to => :smth do |dob|
-    #  (Date.today - dob)/60/60/24/365
-    #end
-
+    field :from => :title,  :to => :titre do |title|
+      Date.today.to_s + title
+    end
   end
 end
